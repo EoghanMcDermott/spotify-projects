@@ -9,7 +9,7 @@ auth_manager = SpotifyClientCredentials(config.client_id, config.client_secret)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
 # user_id can be found in the settings of your account
-playlists = sp.user_playlists(config.user)
+playlists = sp.user_playlists(config.username)
 while playlists:
     for i, playlist in enumerate(playlists['items']):
         print("%4d %s" % (i + 1 + playlists['offset'], playlist['name']))

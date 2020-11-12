@@ -7,9 +7,11 @@ First, make sure to install spotipy
 
 You also need to create an app on your [Spotify Dashboard](https://developer.spotify.com/dashboard)
 
-From here, note the client ID and secret values
+From here, note the <b>client ID</b> and <b>client secret</b> values
  
-Then make sure to set the environment variables `SPOTIPY_CLIENT_ID` and `SPOPTIPY_CLIENT_SECRET`
+Then make sure to set the values in your config file
+
+For now, you also need to enter your username in your config file, which can be found [here](https://www.spotify.com/account/overview/)
 
 
 ## print_playlists

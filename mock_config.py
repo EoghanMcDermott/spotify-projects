@@ -1,3 +1,5 @@
 client_id = 'test_client_id'
 client_secret = 'test_client_secret'
+redirect_uri = 'http://localhost:8080'
+scope = 'user-top-read user-library-read playlist-modify-public playlist-modify-private playlist-read-private'
 username = 'test_user'

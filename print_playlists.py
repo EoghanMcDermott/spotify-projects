@@ -1,9 +1,9 @@
 import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
+from spotipy.oauth2 import SpotifyOAuth
 
 import config
 
-auth_manager = SpotifyClientCredentials(config.client_id, config.client_secret)
+auth_manager = SpotifyOAuth(config.client_id, config.client_secret, redirect_uri=config.redirect_uri, scope=config.scope)
 
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
